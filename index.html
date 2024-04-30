@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Medicine Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="container">
+    <h2>Smart Medicine Box</h2>
+    <form id="medicineForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+        <label for="medicine1">Medicine Name 1:</label>
+        <input type="text" id="medicine1" name="medicine1" required>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="medicine2">Medicine Name 2:</label>
+        <input type="text" id="medicine2" name="medicine2" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="2024" max="2100" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
